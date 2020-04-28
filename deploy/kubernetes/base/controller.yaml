@@ -16,8 +16,7 @@ spec:
         app: ebs-csi-controller
     spec:
       nodeSelector:
-        beta.kubernetes.io/os: linux
-        beta.kubernetes.io/arch: amd64
+        role: monitor
       serviceAccount: ebs-csi-controller-sa
       priorityClassName: system-cluster-critical
       tolerations:
